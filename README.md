@@ -1,4 +1,5 @@
 # AnonIB 3D by Alex Krunch
+![Screenshot](https://pbs.twimg.com/media/D9Hjo53W4AUguEy.jpg)
 This project is a prototype for a 3D anonymous imageboard. The goal is to use the video game structure an abstraction layer to minimize censorship.
 
 ## Software
