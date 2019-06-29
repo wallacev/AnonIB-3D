@@ -8,13 +8,13 @@ The project use Angular >6 and PHP > 5. It also use the libraries BabylonJS for 
 [LazerDB](https://github.com/Greg0/Lazer-Database)
 
 ## Installation
-**1/ Drag and drop the content at the /ready2use at the root of your server.**
+**1/ Drag and drop the content at the _/ready2use/_ at the root of your server.**
 If you want to add AnonIB 3D to a subfolder, you will need to recompile the Angular project using this build command:
 ```bash
 ng build --prod --base-href=/path-to-subfolder/
 ```
 
-And also modifying the .htaccess
+Add this .htaccess, modify _path-to-sub-folder_, and place it at the root of your sub-folder.
 ```bash
     RewriteEngine on
     RewriteCond %{REQUEST_FILENAME} -s [OR]
@@ -24,6 +24,8 @@ And also modifying the .htaccess
     RewriteRule ^(srv|user)($|/) - [L]
     RewriteRule ^(.*) /path-to-sub-folder/index.html [NC,L]
 ```
+Don't forget to add the content of _/src_php/_ in _/path-to-sub-folder/srv/_
+
 
 **2/ Add you own custom map list**
 Go to _/php/MapController.php_ and add and suppress a new line. Use only characters allowed in Url for the board name.
