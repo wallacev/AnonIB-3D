@@ -32,7 +32,7 @@ array_push($levelToPlace, new Level("newmap", 15, 13, true, true) );
 ```
 
 **3/Initialize the admin password + the DB**
-Go to _/php/admin.php_
+Go to _/srv/php/admin.php_
 Type the you password in the field
 Click on Set password
 To re-init the password go to  _/php/password/password.txt_ and erase the file
